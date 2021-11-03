@@ -1,4 +1,5 @@
 # MY-Private-Vaccine
 Software Engineering Assignment
-
-muthia join dan udah ke merger selamat bekerja
+By: 
+- **Ni Putu Zara Athifa Wijana**
+- **Muthia Kartika Putri**
