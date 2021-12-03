@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad12b211-36bf-43ea-a2e1-67fc5c82ded2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="20wCEc9LdPMQC50SsG4wQRGlObb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Kuliah/Semester 7/BIT302-Software Engineering/Assignment 2021/Assignment 2/Web-Resource/muthia" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\MYPrivateVaccine" />
+      <recent name="C:\xampp\htdocs\MYPrivateVaccine\asset" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad12b211-36bf-43ea-a2e1-67fc5c82ded2" name="Changes" comment="" />
+      <created>1636946153408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636946153408</updated>
+      <workItem from="1636946155010" duration="4368000" />
+      <workItem from="1636986895493" duration="4430000" />
+      <workItem from="1637075052110" duration="2245000" />
+      <workItem from="1637144771542" duration="2142000" />
+      <workItem from="1637221415835" duration="625000" />
+      <workItem from="1637545596345" duration="924000" />
+      <workItem from="1637604691264" duration="5540000" />
+      <workItem from="1637633607717" duration="19814000" />
+      <workItem from="1637668846126" duration="3687000" />
+      <workItem from="1637726979346" duration="12619000" />
+      <workItem from="1637774759394" duration="8292000" />
+      <workItem from="1638020200979" duration="2480000" />
+      <workItem from="1638191780203" duration="11585000" />
+      <workItem from="1638251526633" duration="6391000" />
+      <workItem from="1638340860306" duration="2566000" />
+      <workItem from="1638364891511" duration="8427000" />
+      <workItem from="1638408738141" duration="15049000" />
+      <workItem from="1638501495317" duration="9071000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
