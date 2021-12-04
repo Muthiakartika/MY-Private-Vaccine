@@ -1,0 +1,706 @@
+{
+  "id": "1bc69fee-aeb4-434d-8205-74fa87b30cff",
+  "version": "2.0",
+  "name": "MYPrivateVaccine",
+  "url": "http://localhost/MYPrivateVaccine/login.php",
+  "tests": [{
+    "id": "39966fcc-d852-4772-ae57-d309466d6d5c",
+    "name": "regis-admin",
+    "commands": [{
+      "id": "eafec052-b7ee-42e7-895b-533a032471e4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/MYPrivateVaccine/register.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a17175bc-bbb6-49b6-bb1d-4b484b0b6524",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9a511c4-13ca-47dc-ad3c-6f45f7479be4",
+      "comment": "",
+      "command": "click",
+      "target": "name=role",
+      "targets": [
+        ["name=role", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='role']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3614f68e-0afa-4fe8-975e-6b4c021b1962",
+      "comment": "",
+      "command": "select",
+      "target": "name=role",
+      "targets": [],
+      "value": "label=Administrator"
+    }, {
+      "id": "4e6c1f1f-f19f-487d-adbe-2b1a27c12b58",
+      "comment": "",
+      "command": "click",
+      "target": "id=exampleFirstName",
+      "targets": [
+        ["id=exampleFirstName", "id"],
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(2) > #exampleFirstName", "css:finder"],
+        ["xpath=//input[@id='exampleFirstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a74b99f-bbd3-4c31-bab9-31a0a9836634",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleFirstName",
+      "targets": [
+        ["id=exampleFirstName", "id"],
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(2) > #exampleFirstName", "css:finder"],
+        ["xpath=//input[@id='exampleFirstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uzumaki"
+    }, {
+      "id": "14f5064a-9203-4e61-a00d-624caad43283",
+      "comment": "",
+      "command": "click",
+      "target": "id=exampleInputPassword",
+      "targets": [
+        ["id=exampleInputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#exampleInputPassword", "css:finder"],
+        ["xpath=//input[@id='exampleInputPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29751175-3350-4cc3-a630-5764aa10f187",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputPassword",
+      "targets": [
+        ["id=exampleInputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#exampleInputPassword", "css:finder"],
+        ["xpath=//input[@id='exampleInputPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "uzumaki123"
+    }, {
+      "id": "ccc22394-983b-4727-98d5-743d55faeea4",
+      "comment": "",
+      "command": "click",
+      "target": "id=exampleInputEmail",
+      "targets": [
+        ["id=exampleInputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#exampleInputEmail", "css:finder"],
+        ["xpath=//input[@id='exampleInputEmail']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f01de173-97c7-48a5-b476-c842b3451769",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputEmail",
+      "targets": [
+        ["id=exampleInputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#exampleInputEmail", "css:finder"],
+        ["xpath=//input[@id='exampleInputEmail']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "uzumakinaruto@gmail.com"
+    }, {
+      "id": "7d6231ce-96e5-42cd-983e-1d8dfffdfe87",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=.form-group:nth-child(5) > #exampleFirstName", "css:finder"],
+        ["xpath=(//input[@id='exampleFirstName'])[2]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4077526d-164d-4822-b0bc-a185f7b89f4e",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=.form-group:nth-child(5) > #exampleFirstName", "css:finder"],
+        ["xpath=(//input[@id='exampleFirstName'])[2]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Naruto Uzumaki"
+    }, {
+      "id": "adab21d9-c12f-4307-b3e7-70d96ef5d868",
+      "comment": "",
+      "command": "click",
+      "target": "name=centreName",
+      "targets": [
+        ["name=centreName", "name"],
+        ["css=#hidden_div2 > .form-control", "css:finder"],
+        ["xpath=//select[@name='centreName']", "xpath:attributes"],
+        ["xpath=//div[@id='hidden_div2']/select", "xpath:idRelative"],
+        ["xpath=//div[7]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f9eaed2-643d-4181-a812-fb5fb3559f85",
+      "comment": "",
+      "command": "select",
+      "target": "name=centreName",
+      "targets": [],
+      "value": "label=MSU Medical Centre[Selangor]"
+    }, {
+      "id": "4abb9fdc-fa77-4a40-b79f-f6a5e8ac2e41",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b778c3e7-507b-496d-9db1-365d8bc40127",
+    "name": "regis-patient",
+    "commands": [{
+      "id": "a8530e1e-092d-4dba-bf84-70a6aa406d51",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/MYPrivateVaccine/register.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10954ed2-10e5-41c8-ade8-733ce55ca7b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b60706b-09e0-40d4-bb97-a00f692d331a",
+      "comment": "",
+      "command": "click",
+      "target": "name=role",
+      "targets": [
+        ["name=role", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='role']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7afe8d38-b80e-48cd-85d0-2d8b61343ec7",
+      "comment": "",
+      "command": "select",
+      "target": "name=role",
+      "targets": [],
+      "value": "label=Patient"
+    }, {
+      "id": "104a18e0-adc1-40be-85b6-da96a87c862e",
+      "comment": "",
+      "command": "click",
+      "target": "id=exampleFirstName",
+      "targets": [
+        ["id=exampleFirstName", "id"],
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(2) > #exampleFirstName", "css:finder"],
+        ["xpath=//input[@id='exampleFirstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf0be04e-676e-4b44-a3c7-8af54fe29f03",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleFirstName",
+      "targets": [
+        ["id=exampleFirstName", "id"],
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(2) > #exampleFirstName", "css:finder"],
+        ["xpath=//input[@id='exampleFirstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uchiha"
+    }, {
+      "id": "6b185575-eec4-4109-aa24-f4d9fc812d0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=exampleInputPassword",
+      "targets": [
+        ["id=exampleInputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#exampleInputPassword", "css:finder"],
+        ["xpath=//input[@id='exampleInputPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29bc5a8a-d508-43cc-8630-b34806cd4bbe",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputPassword",
+      "targets": [
+        ["id=exampleInputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#exampleInputPassword", "css:finder"],
+        ["xpath=//input[@id='exampleInputPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "uchiha123"
+    }, {
+      "id": "0241e262-ca58-48dd-bf8c-6d9615ba167f",
+      "comment": "",
+      "command": "click",
+      "target": "id=exampleInputEmail",
+      "targets": [
+        ["id=exampleInputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#exampleInputEmail", "css:finder"],
+        ["xpath=//input[@id='exampleInputEmail']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edde24f8-f906-4068-bd20-c6dbee6953b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputEmail",
+      "targets": [
+        ["id=exampleInputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#exampleInputEmail", "css:finder"],
+        ["xpath=//input[@id='exampleInputEmail']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "uchihasasuke@gmail.com"
+    }, {
+      "id": "74c69b57-6617-449c-89e1-312cdc3584b3",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=.form-group:nth-child(5) > #exampleFirstName", "css:finder"],
+        ["xpath=(//input[@id='exampleFirstName'])[2]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bac5be0d-d086-407c-a23f-840902f3358c",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=.form-group:nth-child(5) > #exampleFirstName", "css:finder"],
+        ["xpath=(//input[@id='exampleFirstName'])[2]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Uchiha Sasuke"
+    }, {
+      "id": "992ea713-cb92-4c73-be58-3ce6adffa5a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=ICPassport",
+      "targets": [
+        ["id=ICPassport", "id"],
+        ["name=icpassport", "name"],
+        ["css=#ICPassport", "css:finder"],
+        ["xpath=//input[@id='ICPassport']", "xpath:attributes"],
+        ["xpath=//div[@id='hidden_div']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "939b7fa6-5899-43ca-b52c-2bec341e0ac6",
+      "comment": "",
+      "command": "type",
+      "target": "id=ICPassport",
+      "targets": [
+        ["id=ICPassport", "id"],
+        ["name=icpassport", "name"],
+        ["css=#ICPassport", "css:finder"],
+        ["xpath=//input[@id='ICPassport']", "xpath:attributes"],
+        ["xpath=//div[@id='hidden_div']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "JPY5671234"
+    }, {
+      "id": "9e2fdb2f-17a5-43c3-a8a5-5b15de4c9ffe",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c49370c8-a5ca-4c79-9b9c-9f84393d1765",
+    "name": "Login-admin",
+    "commands": [{
+      "id": "3a518659-4935-45bd-a9ac-a671371c5a01",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "703d82c0-4fd6-49ab-8125-3a8ad912ad92",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uzumaki"
+    }, {
+      "id": "1c02c191-d9f8-4815-906c-5adc8e8b1214",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b724392-d677-4875-8703-0de1a1d30e61",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "uzumaki123"
+    }, {
+      "id": "e4e5c0bf-e659-49a0-af91-aeab5db52b78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "013fc3a8-f7de-48ff-aba0-630b155954f0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/MYPrivateVaccine/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22c93bea-a230-4cd4-b318-713ade7e9934",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db5573a3-8fd4-4f24-b970-11a07668e85b",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36749239-1bbd-420b-9acc-a4c5fc173248",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uzumaki"
+    }, {
+      "id": "f2ee4af6-7e53-4c18-b9f2-8ac88345c4e7",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "630caa53-2086-4204-ae4e-80f66831553a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "uzumaki123"
+    }, {
+      "id": "79bca87d-f453-4c54-b7a7-0199b8a97075",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "27d909c4-6b24-47d4-815f-9383d56d5664",
+    "name": "Login-patient",
+    "commands": [{
+      "id": "ecc87528-9e11-4860-a72a-8033b6ad947c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "976d785f-fde2-477d-b813-23099f2d38bb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/MYPrivateVaccine/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acb056db-b828-46f9-94e7-bf9d38cfa49f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c1554d5-dd87-4b94-8db1-6904f17e8cb6",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96c220c4-948d-4cb8-b7f4-4356a8f98603",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uchiha"
+    }, {
+      "id": "2b39de90-d83a-4b4d-a149-bb4ec2c5adda",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1110c469-c8a7-454b-8c0b-9f02c850cd93",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "uchiha123"
+    }, {
+      "id": "6953ae31-7295-44b2-aa79-e64e0d87ab1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bfba9bba-6734-4269-bc77-312eac242913",
+    "name": "Logout",
+    "commands": [{
+      "id": "e0be45a0-66bd-48fd-8742-5e4acbdc6a8c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/MYPrivateVaccine/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f19d20b0-7886-4900-93d8-ba6ad68c6877",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c96a3fc5-9d5a-4edb-bec2-d28611260bf0",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efffe0ac-bbf0-494c-8df2-5e2b50ff861e",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uchiha"
+    }, {
+      "id": "35579eae-28a6-43ea-972b-6da53f6405f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47db7f23-27b4-4a45-9f68-a7a75145ce21",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "uchiha123"
+    }, {
+      "id": "1bfeffb6-e131-4bc4-aefd-e40d68731347",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c6683d29-a960-487b-94df-2dde96ab44cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.img-profile",
+      "targets": [
+        ["css=.img-profile", "css:finder"],
+        ["xpath=//a[@id='userDropdown']/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ad6ab9f-1d01-4ef8-b0a7-dd9dc9fb4347",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.dropdown-item", "css:finder"],
+        ["xpath=//div[@id='content']/nav/ul/li[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf744870-f95f-4acb-a6f6-998e9eb030bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='logoutModal']/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'logout.php')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "15c4863b-b62a-4e83-855f-e61ad0012bd7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/", "http://localhost/MYPrivateVaccine/asset/home-administrator.php", "http://localhost/MYPrivateVaccine/register.php"],
+  "plugins": []
+}
