@@ -1,4 +1,3 @@
-<!-- Created By Muthia Kartika Putri-->
 <?php
 session_start();
 
