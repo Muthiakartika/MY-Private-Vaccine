@@ -1,4 +1,3 @@
-<!-- Created By Muthia Kartika Putri-->
 <?php
 session_start();
 
@@ -57,7 +56,11 @@ if($_SESSION['role']=="" or $_SESSION['role']!="patient"){
 
         <!-- Divider -->
         <hr class="sidebar-divider">
-
+        
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Patient Menu
+        </div>
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
