@@ -1,4 +1,3 @@
-<!-- Created By Ni Putu Zara Athifa-->
 <?php
     session_start();
     session_destroy();
