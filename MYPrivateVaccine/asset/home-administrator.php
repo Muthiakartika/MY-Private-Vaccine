@@ -54,8 +54,13 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                 <span>Dashboard</span></a>
         </li>
 
-        <!-- Divider -->
+         <!-- Divider -->
         <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Admin Menu
+        </div>
 
 
         <!-- Nav Item -->
