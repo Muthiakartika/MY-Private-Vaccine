@@ -1,4 +1,3 @@
-<!-- Created By Muthia Kartika Putri-->
 <?php
 session_start();
 
@@ -145,7 +144,7 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                 <!-- Content Row -->
                 <div class="row">
 
-                    <!-- Earnings (Monthly) Card Example -->
+                    <!-- Pending Count -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-warning shadow h-100 py-2">
                             <div class="card-body">
@@ -153,7 +152,16 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                             Pending </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                                        <?php
+                                        include 'connection.php';
+                                        $pending_Num = 0;
+                                        $pendingNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Pending'");
+                                        while($dataLoop = mysqli_fetch_array($pendingNum))
+                                        {
+                                            $pending_Num++;
+                                        }
+                                        ?>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $pending_Num?></div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fa fa-history fa-2x text-gray-300"></i>
@@ -163,7 +171,7 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                         </div>
                     </div>
 
-                    <!-- Earnings (Monthly) Card Example -->
+                    <!-- Administered Count -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-success shadow h-100 py-2">
                             <div class="card-body">
@@ -171,7 +179,16 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                             Administered </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                                        <?php
+                                        include 'connection.php';
+                                        $administered_Num = 0;
+                                        $administeredNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Administered'");
+                                        while($dataLoop = mysqli_fetch_array($administeredNum))
+                                        {
+                                            $administered_Num++;
+                                        }
+                                        ?>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $administered_Num?></div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fas fa-redo fa-2x text-gray-300"></i>
@@ -181,7 +198,7 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                         </div>
                     </div>
 
-                    <!-- Earnings (Monthly) Card Example -->
+                    <!-- confirm count-->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-primary shadow h-100 py-2">
                             <div class="card-body">
@@ -189,7 +206,16 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Confirm</div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                                        <?php
+                                        include 'connection.php';
+                                        $confirm_Num = 0;
+                                        $confirmNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Confirm'");
+                                        while($dataLoop = mysqli_fetch_array($confirmNum))
+                                        {
+                                            $confirm_Num++;
+                                        }
+                                        ?>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $confirm_Num?></div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fa fa-check fa-2x text-gray-300"></i>
@@ -199,7 +225,7 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                         </div>
                     </div>
 
-                    <!-- Pending Requests Card Example -->
+                    <!-- Rejected count -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-danger shadow h-100 py-2">
                             <div class="card-body">
@@ -207,7 +233,16 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                             Rejected</div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                                        <?php
+                                        include 'connection.php';
+                                        $reject_Num = 0;
+                                        $rejectNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Rejected'");
+                                        while($dataLoop = mysqli_fetch_array($rejectNum))
+                                        {
+                                            $reject_Num++;
+                                        }
+                                        ?>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $reject_Num?></div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fa fa-times fa-2x text-gray-300"></i>
