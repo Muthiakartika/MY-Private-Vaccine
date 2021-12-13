@@ -16,7 +16,7 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <link rel="icon" href="../../img/assets/favicon.png" type="img/png">
     <title>MY Private Vaccine - Record New Batch</title>
 
     <!-- Custom fonts for this template-->
