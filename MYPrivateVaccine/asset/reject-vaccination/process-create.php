@@ -11,7 +11,7 @@
     $fullname   = $_POST["fullname"];
 
     //Mengurangi jumlah stock vaccine
-    mysqli_query($connect, "UPDATE vaccination SET status = 'Rejected' WHERE vaccinationID = '$vaccinationID'");
+    mysqli_query($connect, "UPDATE vaccination SET status = 'Rejected', remarks = '$remarks' WHERE vaccinationID = '$vaccinationID'");
 
     $mail = new PHPMailer(true);
     try {
