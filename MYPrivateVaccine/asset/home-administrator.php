@@ -48,20 +48,19 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="home-administrator.php">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
 
-         <!-- Divider -->
+        <!-- Divider -->
         <hr class="sidebar-divider">
 
         <!-- Heading -->
         <div class="sidebar-heading">
             Admin Menu
         </div>
-
 
         <!-- Nav Item -->
         <li class="nav-item">
@@ -71,7 +70,7 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
         </li>
 
         <!-- Nav Item -->
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="view-batch/view.php">
                 <i class="fas fa-file-alt"></i>
                 <span>View Vaccination Information</span></a>
@@ -160,7 +159,13 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                         <?php
                                         include 'connection.php';
                                         $pending_Num = 0;
-                                        $pendingNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Pending'");
+                                        $pendingNum = mysqli_query($connect, "SELECT * FROM vaccination
+                                                                    INNER JOIN batch
+                                                                    ON vaccination.batchNo = batch.batchNo
+                                                                    INNER JOIN healthcarecentre
+                                                                    ON healthcarecentre.centreName = batch.centreName
+                                                                    WHERE vaccination.status = 'Pending' AND
+                                                                    healthcarecentre.centreName = '".$_SESSION['centreName']."'");
                                         while($dataLoop = mysqli_fetch_array($pendingNum))
                                         {
                                             $pending_Num++;
@@ -187,7 +192,13 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                         <?php
                                         include 'connection.php';
                                         $administered_Num = 0;
-                                        $administeredNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Administered'");
+                                        $administeredNum = mysqli_query($connect, "SELECT * FROM vaccination
+                                                                    INNER JOIN batch
+                                                                    ON vaccination.batchNo = batch.batchNo
+                                                                    INNER JOIN healthcarecentre
+                                                                    ON healthcarecentre.centreName = batch.centreName
+                                                                    WHERE vaccination.status = 'Administered' AND
+                                                                    healthcarecentre.centreName = '".$_SESSION['centreName']."'");
                                         while($dataLoop = mysqli_fetch_array($administeredNum))
                                         {
                                             $administered_Num++;
@@ -214,7 +225,13 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                         <?php
                                         include 'connection.php';
                                         $confirm_Num = 0;
-                                        $confirmNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Confirm'");
+                                        $confirmNum = mysqli_query($connect, "SELECT * FROM vaccination
+                                                                    INNER JOIN batch
+                                                                    ON vaccination.batchNo = batch.batchNo
+                                                                    INNER JOIN healthcarecentre
+                                                                    ON healthcarecentre.centreName = batch.centreName
+                                                                    WHERE vaccination.status = 'Confirm' AND
+                                                                    healthcarecentre.centreName = '".$_SESSION['centreName']."'");
                                         while($dataLoop = mysqli_fetch_array($confirmNum))
                                         {
                                             $confirm_Num++;
@@ -241,7 +258,13 @@ if($_SESSION['role']=="" or $_SESSION['role']!="administrator"){
                                         <?php
                                         include 'connection.php';
                                         $reject_Num = 0;
-                                        $rejectNum = mysqli_query($connect, "SELECT * FROM vaccination WHERE status = 'Rejected'");
+                                        $rejectNum = mysqli_query($connect, "SELECT * FROM vaccination
+                                                                    INNER JOIN batch
+                                                                    ON vaccination.batchNo = batch.batchNo
+                                                                    INNER JOIN healthcarecentre
+                                                                    ON healthcarecentre.centreName = batch.centreName
+                                                                    WHERE vaccination.status = 'Rejected' AND
+                                                                    healthcarecentre.centreName = '".$_SESSION['centreName']."'");
                                         while($dataLoop = mysqli_fetch_array($rejectNum))
                                         {
                                             $reject_Num++;
