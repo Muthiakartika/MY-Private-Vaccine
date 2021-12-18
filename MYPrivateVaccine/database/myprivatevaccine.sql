@@ -52,7 +52,8 @@ INSERT INTO `batch` (`batchNo`, `expiryDate`, `quantityAvailable`, `quantityAdmi
 CREATE TABLE `healthcarecentre` (
   `id` int(11) NOT NULL,
   `centreName` varchar(30) NOT NULL,
-  `address` varchar(30) NOT NULL
+  `address` varchar(30) NOT NULL,
+  `other` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
