@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2021 at 03:56 PM
+-- Generation Time: Dec 21, 2021 at 09:23 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.25
 
@@ -60,10 +60,10 @@ CREATE TABLE `healthcarecentre` (
 -- Dumping data for table `healthcarecentre`
 --
 
-INSERT INTO `healthcarecentre` (`id`, `centreName`, `address`) VALUES
-(1, 'MSU Medical Centre', 'Selangor'),
-(2, 'Senawang Specialist Hospital', 'Negri Sembilan'),
-(3, 'Timberland Medical Centre', 'Serawak');
+INSERT INTO `healthcarecentre` (`id`, `centreName`, `address`, `other`) VALUES
+(1, 'MSU Medical Centre', 'Selangor', ''),
+(2, 'Senawang Specialist Hospital', 'Negri Sembilan', ''),
+(3, 'Timberland Medical Centre', 'Serawak', '');
 
 -- --------------------------------------------------------
 
@@ -87,8 +87,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `icpassport`, `centreName`, `username`, `password`, `fullname`, `email`, `role`) VALUES
-(96, '', 'MSU Medical Centre', 'uzumaki', 'uzumaki123', 'Naruto Uzumaki', 'nandaimehokagenaruto@gmail.com', 'administrator'),
-(97, 'JPY5671234', '', 'uchiha', 'uchiha123', 'Uchiha Sasuke', 'uchihasasukeshage@gmail.com', 'patient');
+(1, '', 'MSU Medical Centre', 'uzumaki', 'uzumaki123', 'Naruto Uzumaki', 'nandaimehokagenaruto@gmail.com', 'administrator'),
+(2, 'JPY5671234', '', 'uchiha', 'uchiha123', 'Uchiha Sasuke', 'uchihasasukeshage@gmail.com', 'patient');
 
 -- --------------------------------------------------------
 
@@ -110,7 +110,7 @@ CREATE TABLE `vaccination` (
 --
 
 INSERT INTO `vaccination` (`vaccinationID`, `batchNo`, `appointmentDate`, `status`, `remarks`, `fullname`) VALUES
-(32, '512710P', '2021-12-14', 'Administered', 'He has gotten 1 doses of vaccine without any sympt', 'Uchiha Sasuke');
+(44, '512710P', '2021-12-20', 'Rejected', 'quota for the vaccination has been full', 'Uchiha Sasuke');
 
 -- --------------------------------------------------------
 
@@ -177,19 +177,19 @@ ALTER TABLE `vaccine`
 -- AUTO_INCREMENT for table `healthcarecentre`
 --
 ALTER TABLE `healthcarecentre`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- AUTO_INCREMENT for table `vaccination`
 --
 ALTER TABLE `vaccination`
-  MODIFY `vaccinationID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `vaccinationID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `vaccine`
